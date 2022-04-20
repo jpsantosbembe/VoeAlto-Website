@@ -123,8 +123,17 @@ h1 {
   margin-bottom: -2rem;
 }
 
+.portugal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .img-destino {
   border-radius: 1rem;
+  width: 100%;
 }
 
 .textDestino {
@@ -132,7 +141,29 @@ h1 {
 }
 
 .slide{
-  display: none;
+  display: block;
+  text-align: center;
+  padding-right: .5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-grid {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  padding: .5rem;
 }
 
 .ante, .prox {
@@ -170,6 +201,8 @@ h1 {
   margin-top: -6.9rem;
   text-indent: 1rem;
 }
+
+
 
 .dot{
   cursor: pointer;
