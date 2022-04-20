@@ -131,6 +131,22 @@ h1 {
   margin-right: 5rem;
 }
 
+.italia-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.franca-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .img-destino {
   border-radius: 1rem;
   width: 100%;
