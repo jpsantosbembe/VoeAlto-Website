@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Baloo;
+  src: url(/fonts/Baloo_2/Baloo2-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Baloo;
+  font-weight: bold;
+}
+
+.logo {
+  height: 2.4rem;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #BF6EA9;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .9rem .5rem;
+  align-items: center;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #BF6EA9;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #eedcea;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #BF6EA9;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+h1 {
+  color: #BF6EA9;
+  padding: 0 2rem;
+  margin-bottom: -1rem;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  padding: 2rem 2rem;
+  margin-top: 0;
+  margin-bottom: -2rem;
+}
+
+
+.slide{
+  display: none;
+}
+
+.ante, .prox {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prox {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.ante:hover, .prox:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.textDestino{
+  display: block;
+  color: #ffffff;
+  background: rgb(191,110,169);
+  background: linear-gradient(90deg, rgba(191,110,169,1) 0%, rgba(191,110,169,1) 25%, rgba(0,0,0,0) 100%);
+  font-size: 4rem;
+  position: relative;
+  text-align: left;
+  margin-top: -6.9rem;
+  text-indent: 1rem;
+}
+
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4;}
+  to {opacity: 1;}
+}
