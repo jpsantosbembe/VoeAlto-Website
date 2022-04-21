@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #fdebf8;
   color: #BF6EA9;
 }
 
@@ -38,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: #ffffff;
+  background-color: #fdebf8;
 }
 
 .navbar-links li {
@@ -48,7 +48,7 @@ body {
 .navbar-links li a {
   text-decoration: none;
   color: #BF6EA9;
-  padding: 1rem;
+  padding: 2rem;
   display: block;
 }
 
