@@ -74,7 +74,14 @@ body {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 700px) {
+h1 {
+  font-size: 3rem;
+  color: #BF6EA9;
+  padding: 0 2rem;
+  margin-bottom: -1rem;
+}
+
+@media screen and (max-width: 600px) {
   .toggle-button {
     display: flex;
   }
@@ -97,6 +104,7 @@ body {
 
   .navbar-links li {
     text-align: center;
+    font-size: 1rem;
   }
 
   .navbar-links li a {
@@ -106,13 +114,6 @@ body {
   .navbar-links.active {
     display: flex;
   }
-}
-
-h1 {
-  font-size: 3rem;
-  color: #BF6EA9;
-  padding: 0 2rem;
-  margin-bottom: -1rem;
 }
 
 .slideshow-container {
@@ -134,10 +135,6 @@ h1 {
 .img-destino {
   border-radius: 1rem;
   width: 100%;
-}
-
-.textDestino {
-  border-bottom-left-radius: 1rem;
 }
 
 .slide{
@@ -166,30 +163,6 @@ h1 {
   padding: .5rem;
 }
 
-.ante, .prox {
-  cursor: pointer;
-  position: relative;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.prox {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.ante:hover, .prox:hover{
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 .textDestino{
   display: block;
   color: #ffffff;
@@ -200,19 +173,7 @@ h1 {
   text-align: left;
   margin-top: -6.9rem;
   text-indent: 1rem;
-}
-
-
-
-.dot{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  border-bottom-left-radius: 1rem;
 }
 
 .active, .dot:hover{
@@ -237,8 +198,7 @@ h1 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1rem;
-  margin: 1rem .5rem;
+  font-size: 1.5rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   transition-duration: 0.4s;
@@ -268,5 +228,66 @@ h1 {
   align-items: center;
   text-indent: 1rem;
   margin-top: 2rem;
+}
 
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 2rem;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-left: -1rem;
+  }
+
+  .title2 {
+    margin-bottom: 1rem;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    padding: .5rem .5rem;
+    margin-top: 0;
+    margin-bottom: -2rem;
+  }
+
+  .container-destinos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .textDestino{
+    font-size: 1.5rem;
+    margin-top: -2.9rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .img-grid {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    padding: .5rem;
+  }
+
+  .container-whatsapp {
+    align-items: center;
+    margin: 0;
+  }
+
+  .botaoWhatsApp {
+    font-size: 1rem;
+    
+  }
 }
