@@ -9,7 +9,7 @@ Website criado para apresentar a empresa.
 
 - Clone o projeto
 
-- Duplo clique em index.js
+- Duplo clique em index.html
 
 ou
 
